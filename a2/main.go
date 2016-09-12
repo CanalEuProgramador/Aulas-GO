@@ -21,6 +21,6 @@ func main() {
 	case 5:
 		fmt.Println("Number 5")
 	default:
-		fmt.Println("DEFUALT")
+		fmt.Println("DEFAULT")
 	}
 }
