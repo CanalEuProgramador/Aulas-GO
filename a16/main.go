@@ -39,12 +39,9 @@ func loader(done <-chan bool) {
 			return
 		default:
 			fmt.Printf("\r")
-			fmt.Printf(string(load[i]))
+			fmt.Printf(string(load[i%len(load)]))
 
 			i++
-			if i == len(load) {
-				i = 0
-			}
 		}
 	}
 }
